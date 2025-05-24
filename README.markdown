@@ -5,7 +5,6 @@ A Streamlit-based application for reading manga using the MangaDex API. Search f
 ## Features
 - Search for manga by name and select from similar titles.
 - Browse and select chapters from a dropdown.
-- Read manga pages with Previous/Next navigation and a Next Chapter button.
 - View related GIFs scraped from Tenor.
 - Play random famous songs via YouTube embed.
 - Displays a random Japanese greeting for a cultural touch.
@@ -13,9 +12,9 @@ A Streamlit-based application for reading manga using the MangaDex API. Search f
 - Windows executable (.exe) for users without Python.
 
 ## Prerequisites
-- Python 3.8 or higher (for development or creating the .exe)
+- Python 3.8 or higher
 - pip for installing dependencies
-- Windows 10 or later (for running the .exe)
+- Windows 10 or later
 
 ## Installation
 1. **Clone or download the repository**:
@@ -99,7 +98,6 @@ Listed in `requirements.txt`:
 
 ## Notes
 - **MangaDex API**: Uses public API for manga data and images. Be aware of rate limits.
-- **Legal**: MangaDex hosts official and fan-translated content, which may be subject to copyright. This app only uses public API data.
 - **Executable Size**: The .exe folder may be large (~100-200 MB) due to bundled dependencies.
 - **Windows Defender**: Unsigned .exe files may be flagged. Add an exception or sign the .exe for distribution.
 - **Internet**: The app requires an internet connection for MangaDex API and Tenor GIFs.
@@ -107,12 +105,11 @@ Listed in `requirements.txt`:
 ## Troubleshooting
 - **Streamlit Import Error**: Ensure you’re in a clean virtual environment and include `--hidden-import streamlit --hidden-import importlib_metadata` in the PyInstaller command.
 - **App Fails to Start**: Run the .exe from Command Prompt to view errors. Check if all dependencies are installed correctly.
-- **Slow Image Loading**: Ensure a stable internet connection, as images are fetched from MangaDex.
 
 ## Contributing
 Submit issues or pull requests to improve the app.
 
 ## Acknowledgments
-- Manga data and images provided by [MangaDex](https://mangadex.org).
+- Manga data provided by [MangaDex](https://mangadex.org).
 - GIFs sourced from [Tenor](https://tenor.com).
 - Songs embedded via [YouTube](https://youtube.com).
