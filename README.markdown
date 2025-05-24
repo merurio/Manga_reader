@@ -43,12 +43,6 @@ To create a standalone .exe for Windows users:
    ```bash
    pyinstaller --onedir --noconsole --name MangaReader --add-data "manga_reader.py;." --hidden-import streamlit --hidden-import importlib_metadata run.py
    ```
-   - `--onedir`: Creates a directory with all files (faster startup).
-   - `--noconsole`: Hides the terminal window.
-   - `--name MangaReader`: Names the executable `MangaReader.exe`.
-   - `--add-data "manga_reader.py;."`: Includes the main script.
-   - `--hidden-import streamlit --hidden-import importlib_metadata`: Ensures Streamlit and its metadata are included.
-   - This creates a `dist/MangaReader/` folder with the executable and dependencies.
 
 4. **Locate the executable**:
    - Find `MangaReader.exe` in `dist/MangaReader/`.
