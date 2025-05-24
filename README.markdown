@@ -2,15 +2,6 @@
 
 A Streamlit-based application for reading manga using the MangaDex API. Search for manga, select from similar titles, choose chapters, and view pages with a clean interface. Includes related GIFs from Tenor and more. Can be bundled as a Windows executable (.exe) for easy distribution.
 
-## Features
-- Search for manga by name and select from similar titles.
-- Browse and select chapters from a dropdown.
-- View related GIFs scraped from Tenor.
-- Play random famous songs via YouTube embed.
-- Displays a random Japanese greeting for a cultural touch.
-- Data sourced from [MangaDex](https://mangadex.org).
-- Windows executable (.exe) for users without Python.
-
 ## Prerequisites
 - Python 3.8 or higher
 - pip for installing dependencies
@@ -67,49 +58,14 @@ To create a standalone .exe for Windows users:
    - If Windows Defender flags the .exe, add an exception:
      - Go to Windows Security > Virus & Threat Protection > Manage Settings > Add or Remove Exclusions.
      - Add the `MangaReader.exe` file or folder.
-   - For broader distribution, digitally sign the .exe with a certificate (requires tools like Microsoft Sign Tool).
-
-## Running the Executable
-- Double-click `MangaReader.exe` in the `dist/MangaReader/` folder.
-- A browser window should open with the manga reader app.
-- If the app doesn’t open, run from Command Prompt to view errors:
-  ```bash
-  cd dist\MangaReader
-  MangaReader.exe
-  ```
+   - For broader distribution, digitally sign the .exe with a certificate.
 
 ## Usage
 1. In the sidebar, enter a manga name (e.g., "Naruto") and click "Search."
 2. Select a manga from the dropdown of similar titles.
 3. Choose a chapter from the chapter dropdown.
-4. Use "Previous Page" and "Next Page" buttons to navigate pages.
-5. Click "Next Chapter" (if available) to read the next chapter.
-6. Expand sections for related GIFs and a random song.
+Enjoy reading~
 
 ## License
 This project is licensed under the MIT License. See `LICENSE.txt` for details.
 
-## Dependencies
-Listed in `requirements.txt`:
-- streamlit>=1.37.0
-- requests>=2.31.0
-- beautifulsoup4>=4.12.3
-- pyinstaller>=5.13.0 (for creating .exe)
-
-## Notes
-- **MangaDex API**: Uses public API for manga data and images. Be aware of rate limits.
-- **Executable Size**: The .exe folder may be large (~100-200 MB) due to bundled dependencies.
-- **Windows Defender**: Unsigned .exe files may be flagged. Add an exception or sign the .exe for distribution.
-- **Internet**: The app requires an internet connection for MangaDex API and Tenor GIFs.
-
-## Troubleshooting
-- **Streamlit Import Error**: Ensure you’re in a clean virtual environment and include `--hidden-import streamlit --hidden-import importlib_metadata` in the PyInstaller command.
-- **App Fails to Start**: Run the .exe from Command Prompt to view errors. Check if all dependencies are installed correctly.
-
-## Contributing
-Submit issues or pull requests to improve the app.
-
-## Acknowledgments
-- Manga data provided by [MangaDex](https://mangadex.org).
-- GIFs sourced from [Tenor](https://tenor.com).
-- Songs embedded via [YouTube](https://youtube.com).
