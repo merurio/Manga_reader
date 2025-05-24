@@ -1,6 +1,6 @@
 # Manga Reader App
 
-A Streamlit-based application for reading manga using the MangaDex API. Search for manga, select from similar titles, choose chapters, and view pages with a clean interface. Includes related GIFs from Tenor and a random famous song (English, Japanese, or Korean). Can be bundled as a Windows executable (.exe) for easy distribution.
+A Streamlit-based application for reading manga using the MangaDex API. Search for manga, select from similar titles, choose chapters, and view pages with a clean interface. Includes related GIFs from Tenor and more. Can be bundled as a Windows executable (.exe) for easy distribution.
 
 ## Features
 - Search for manga by name and select from similar titles.
